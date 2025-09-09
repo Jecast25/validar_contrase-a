@@ -7,8 +7,8 @@ def evaluar_expresion(expresion):
         resultado = eval(expresion)
         return resultado
     except ZeroDivisionError:
-        return "DivisionByZero"
-    except Exception as e:
+        return "DivisionByZero" 
+    except Exception as e:  # Si ocurre cualquier otro error, lo regresa como cadena
         return f"{str(e)}"
     finally:
         # Limpiar recursos si es necesario
