@@ -1,5 +1,5 @@
 import fastapi
-from validacion_contraseña import validar_contraseña
+from validacion_con.validacion_contraseña import validar_contraseña
 
 app = fastapi.FastAPI()
 @app.post("/password/validate")
